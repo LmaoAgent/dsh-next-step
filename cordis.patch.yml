@@ -1,0 +1,6 @@
+# Bundle patch: the panel installs this package as a composition, and this one
+# row mounts it. The package carries both halves (Host entry plus the browser
+# half selected by `dsh.client`).
+- insert:
+    - id: next-step
+      name: dsh-next-step

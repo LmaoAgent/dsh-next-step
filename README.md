@@ -36,9 +36,10 @@ It does **not** grow the main context, so later turns are not more expensive.
 
 ## Install
 
-Mount the package in your web profile, for example with a `--patch` overlay.
-One row carries both halves: the Host entry, and (through the `dsh.client`
-manifest) the browser bundle.
+Install it from the Plugins panel (package name, repository URL, or a local
+directory) and enable it; the package declares `dsh.bundle.patch`, so the panel
+mounts the row below for you. For a source profile, the same row also works in
+a `--patch` overlay.
 
 ```yaml
 - insert:
