@@ -1,0 +1,28 @@
+{
+  "name": "dsh-next-step",
+  "version": "0.1.0",
+  "description": "Ghost next-step suggestions for DeepSeek Harness: one cheap model call after each turn, shown as grey text in the composer",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "repository": { "type": "git", "url": "git+https://github.com/LmaoAgent/dsh-next-step.git" },
+  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "ghost-text", "suggestion"],
+  "exports": {
+    ".": { "types": "./lib/types/index.d.ts", "default": "./lib/index.js" },
+    "./client": { "types": "./lib/types/client/index.d.ts", "default": "./lib/client.js" },
+    "./typert": { "types": "./lib/typert.host.d.ts", "default": "./lib/typert.host.js" },
+    "./remote": { "types": "./lib/typert.remote-client.d.ts", "default": "./lib/typert.remote-client.js" },
+    "./package.json": "./package.json"
+  },
+  "dsh": { "client": { "platform": "web", "inject": ["@deepseek-ai/dsh-api-remotes", "@deepseek-ai/dsh-api-session-controller", "@deepseek-ai/dsh-client-ui-conversation"] } },
+  "files": ["lib", "README.md", "LICENSE"],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^0.2.1-rc.2",
+    "@deepseek-ai/dsh-agent": "^0.2.1-rc.2",
+    "@deepseek-ai/dsh-llm": "^0.2.1-rc.2",
+    "@deepseek-ai/dsh-session": "^0.2.1-rc.2",
+    "@deepseek-ai/dsh-typert-protocol": "^0.2.1-rc.2",
+    "@deepseek-ai/dsh-client-ui-conversation": "^0.2.1-rc.2"
+  }
+}

@@ -1,0 +1,4 @@
+# Mount both halves in a DeepSeek Harness web profile.
+- insert:
+    - name: dsh-next-step
+    - name: dsh-next-step/client
