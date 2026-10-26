@@ -60,7 +60,7 @@ Optional host configuration:
 
 ## Build
 
-`lib/` is produced inside the DeepSeek Harness workspace (it needs the workspace TypeScript project graph and the Typert generator). This repository mirrors the two source trees for review; see `src/index.ts` (Host) and `src/client/index.ts` (browser).
+`lib/` ships prebuilt so the package is usable from this repository as-is (`lib/index.js`, `lib/client.js`, the generated `lib/typert.*` pair, and declarations). Rebuilding requires the DeepSeek Harness workspace: its TypeScript project graph plus `scripts/generate-typert.ts` produce `lib/typert.host.*` and `lib/typert.remote-client.*`, and the client bundle is built with the workspace's `clientBundle` preset. Source lives in `src/index.ts` (Host) and `src/client/index.ts` (browser).
 
 ## Limitations
 
