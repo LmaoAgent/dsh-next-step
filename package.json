@@ -26,14 +26,6 @@
       "types": "./lib/types/client/index.d.ts",
       "default": "./lib/client.js"
     },
-    "./typert": {
-      "types": "./lib/typert.host.d.ts",
-      "default": "./lib/typert.host.js"
-    },
-    "./remote": {
-      "types": "./lib/typert.remote-client.d.ts",
-      "default": "./lib/typert.remote-client.js"
-    },
     "./package.json": "./package.json"
   },
   "dsh": {
@@ -55,35 +47,5 @@
     "README.md",
     "LICENSE"
   ],
-  "peerDependencies": {
-    "@deepseek-ai/cordis": "^0.2.1-rc.2",
-    "@deepseek-ai/dsh-agent": "^0.2.1-rc.2",
-    "@deepseek-ai/dsh-llm": "^0.2.1-rc.2",
-    "@deepseek-ai/dsh-session": "^0.2.1-rc.2",
-    "@deepseek-ai/dsh-typert-protocol": "^0.2.1-rc.2",
-    "@deepseek-ai/dsh-client-ui-conversation": "^0.2.1-rc.2"
-  },
-  "peerDependenciesMeta": {
-    "@deepseek-ai/cordis": {
-      "optional": true
-    },
-    "@deepseek-ai/dsh-agent": {
-      "optional": true
-    },
-    "@deepseek-ai/dsh-llm": {
-      "optional": true
-    },
-    "@deepseek-ai/dsh-session": {
-      "optional": true
-    },
-    "@deepseek-ai/dsh-typert-protocol": {
-      "optional": true
-    },
-    "@deepseek-ai/dsh-client-ui-conversation": {
-      "optional": true
-    }
-  },
-  "dependencies": {
-    "@deepseek-ai/schemastery": "^3.18.5"
-  }
+  "dependencies": {}
 }
