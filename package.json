@@ -84,6 +84,6 @@
     }
   },
   "dependencies": {
-    "@deepseek-ai/schemastery": "0.2.1-alpha-3"
+    "@deepseek-ai/schemastery": "^3.18.5"
   }
 }
