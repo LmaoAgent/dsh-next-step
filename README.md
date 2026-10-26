@@ -36,12 +36,13 @@ It does **not** grow the main context, so later turns are not more expensive.
 
 ## Install
 
-Mount both rows in your web profile, for example with a `--patch` overlay:
+Mount the package in your web profile, for example with a `--patch` overlay.
+One row carries both halves: the Host entry, and (through the `dsh.client`
+manifest) the browser bundle.
 
 ```yaml
 - insert:
     - name: dsh-next-step
-    - name: dsh-next-step/client
 ```
 
 ```sh

@@ -1,4 +1,5 @@
-# Mount both halves in a DeepSeek Harness web profile.
+# Mount the plugin in a DeepSeek Harness web profile. One row carries both
+# halves: the Host entry (turn/end → cheap completion) and, through the
+# package's `dsh.client` manifest, the browser ghost-text feed.
 - insert:
     - name: dsh-next-step
-    - name: dsh-next-step/client
