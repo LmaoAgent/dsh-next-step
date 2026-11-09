@@ -1,7 +1,7 @@
 {
   "name": "dsh-next-step",
-  "version": "0.1.0",
-  "description": "Ghost next-step suggestions for DeepSeek Harness: one cheap model call after each turn, shown as grey text in the composer",
+  "version": "0.2.0",
+  "description": "Grey ghost next-step suggestions for the DeepSeek Harness composer",
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
@@ -54,5 +54,12 @@
   },
   "scripts": {
     "serve": "node serve.mjs"
+  },
+  "homepage": "https://github.com/LmaoAgent/dsh-next-step#readme",
+  "bugs": {
+    "url": "https://github.com/LmaoAgent/dsh-next-step/issues"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

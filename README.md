@@ -21,16 +21,17 @@ The suggestion never enters the conversation history.
 
 ## Install
 
-1. Start the service (keep it running):
+1. Install from the registry:
 
    ```sh
-   npx --yes github:LmaoAgent/dsh-next-step
+   npm install -g dsh-next-step   # optional: run the service by hand
    ```
 
-   or from a clone: `node serve.mjs`. It prints `next-step: http://127.0.0.1:61760`.
+2. In DeepSeek Harness open **Plugins → Add plugin**, enter `dsh-next-step`,
+   install, enable, and restart the app. The bundle starts the service through
+   the harness MCP client, so nothing has to be launched by hand.
 
-2. In DeepSeek Harness open **Plugins → Add plugin**, paste
-   `https://github.com/LmaoAgent/dsh-next-step`, install, enable, and restart the app.
+   To run it manually instead: `npx dsh-next-step` (prints `next-step: http://127.0.0.1:61760`).
 
 3. Open a new Session, send a message, and clear the input: the suggestion appears within 15 seconds.
 
