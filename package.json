@@ -11,11 +11,11 @@
     "url": "git+https://github.com/LmaoAgent/dsh-next-step.git"
   },
   "keywords": [
-    "deepseek-harness",
-    "dsh",
     "dsh-plugin",
+    "deepseek-harness",
     "ghost-text",
-    "suggestion"
+    "suggestion",
+    "composer"
   ],
   "exports": {
     ".": {
@@ -43,9 +43,16 @@
   },
   "files": [
     "lib",
+    "serve.mjs",
     "cordis.patch.yml",
     "README.md",
     "LICENSE"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "bin": {
+    "dsh-next-step": "./serve.mjs"
+  },
+  "scripts": {
+    "serve": "node serve.mjs"
+  }
 }
