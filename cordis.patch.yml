@@ -1,4 +1,14 @@
-# This bundle is one package: the profile mounts it by its bundle entry, so
-# inserting the same package here would load its client half twice and trip
-# the client module registry. The patch is intentionally empty.
-[]
+# This bundle mounts the harness MCP client with our server. The server speaks
+# MCP on stdio (so the harness supervises it) and also listens on loopback for
+# the browser half, which cannot talk MCP itself.
+- insert:
+    - id: next-step-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        servers:
+          next-step:
+            command: npx
+            args: ['-y', 'github:LmaoAgent/dsh-next-step']
+            env:
+              NEXT_STEP_HTTP_PORT: '61760'
+              DEEPSEEK_API_KEY: !!js process.env.DEEPSEEK_API_KEY
