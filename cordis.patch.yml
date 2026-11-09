@@ -5,10 +5,10 @@
     - id: next-step-mcp
       name: '@deepseek-ai/dsh-mcp-client'
       config:
-        servers:
-          next-step:
-            command: npx
-            args: ['-y', 'github:LmaoAgent/dsh-next-step']
-            env:
-              NEXT_STEP_HTTP_PORT: '61760'
-              DEEPSEEK_API_KEY: !!js process.env.DEEPSEEK_API_KEY
+        transport: stdio
+        serverName: next-step
+        command: npx
+        args: ['-y', 'github:LmaoAgent/dsh-next-step']
+        env:
+          NEXT_STEP_HTTP_PORT: '61760'
+          DEEPSEEK_API_KEY: !!js process.env.DEEPSEEK_API_KEY
