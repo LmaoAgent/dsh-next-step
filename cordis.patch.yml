@@ -11,4 +11,4 @@
         args: ['-y', 'github:LmaoAgent/dsh-next-step']
         env:
           NEXT_STEP_HTTP_PORT: '61760'
-          DEEPSEEK_API_KEY: !!js process.env.DEEPSEEK_API_KEY
+          DEEPSEEK_API_KEY: !!js 'process.env.DEEPSEEK_API_KEY ?? ""'
